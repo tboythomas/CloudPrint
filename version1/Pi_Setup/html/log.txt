@@ -1,0 +1,166 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+avahi-daemon is already the newest version.
+libavahi-client3 is already the newest version.
+libcups2 is already the newest version.
+libsnmp30 is already the newest version.
+The following packages were automatically installed and are no longer required:
+  apache2.2-bin apache2.2-common g++-4.6 lesstif2 libarchive12 libass4
+  libavcodec53 libavcodec54 libavformat54 libavutil51 libavutil52 libbind9-80
+  libclass-isa-perl libcolord1 libdconf0 libdirac-encoder0 libdns88
+  libdrm-nouveau1a libepoxy0 libevdev2 libfftw3-3 libgd2-xpm libgdu0
+  libgeoclue0 libgphoto2-2 libgphoto2-port0 libgraphite2-2.0.0 libgssglue1
+  libicu48 libimobiledevice2 libinput5 libisc84 libisccc80 libisccfg82
+  libjson0 liblcms1 liblwres80 libmikmod2 libmozjs10d libmpc2 libmtdev1
+  libobrender27 libobt0 libopencore-amrnb0 libopencore-amrwb0 libopencv-gpu2.4
+  libopencv-photo2.4 libopencv-stitching2.4 libopencv-ts2.4
+  libopencv-videostab2.4 libopenjpeg2 libparted0debian1 libpciaccess0
+  libplist1 libpoppler19 libproxy0 libreadline5 librtmp0 libsclang1
+  libstdc++6-4.6-dev libswitch-perl libswscale2 libtiff4 libts-0.0-0
+  libusbmuxd1 libwebp2 libx264-123 libx264-130 libxcb-composite0 libxcb-xkb1
+  libxfce4util4 libxp6 openssh-blacklist openssh-blacklist-extra python3.2
+  python3.2-minimal tsconf ttf-dejavu-core
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+converted 'https://github.com/google/cups-connector/releases/download/2016.01.02/gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz' (ANSI_X3.4-1968) -> 'https://github.com/google/cups-connector/releases/download/2016.01.02/gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz' (UTF-8)
+--2016-03-02 07:27:15--  https://github.com/google/cups-connector/releases/download/2016.01.02/gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz
+Resolving github.com (github.com)... 192.30.252.129
+Connecting to github.com (github.com)|192.30.252.129|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://github-cloud.s3.amazonaws.com/releases/31638315/d428529a-b3b7-11e5-9841-40d2c67edaec.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160302%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160302T072716Z&X-Amz-Expires=300&X-Amz-Signature=e003e37e4d3126b6e573690a439a4e7b2edf4e9981dec8513c892875edefe86b&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgcp-cups-connector-rpi-jessie-2016.01.02.tar.gz&response-content-type=application%2Foctet-stream [following]
+converted 'https://github-cloud.s3.amazonaws.com/releases/31638315/d428529a-b3b7-11e5-9841-40d2c67edaec.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20160302%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160302T072716Z&X-Amz-Expires=300&X-Amz-Signature=e003e37e4d3126b6e573690a439a4e7b2edf4e9981dec8513c892875edefe86b&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgcp-cups-connector-rpi-jessie-2016.01.02.tar.gz&response-content-type=application%2Foctet-stream' (ANSI_X3.4-1968) -> 'https://github-cloud.s3.amazonaws.com/releases/31638315/d428529a-b3b7-11e5-9841-40d2c67edaec.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ/20160302/us-east-1/s3/aws4_request&X-Amz-Date=20160302T072716Z&X-Amz-Expires=300&X-Amz-Signature=e003e37e4d3126b6e573690a439a4e7b2edf4e9981dec8513c892875edefe86b&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment; filename=gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz&response-content-type=application/octet-stream' (UTF-8)
+--2016-03-02 07:27:16--  https://github-cloud.s3.amazonaws.com/releases/31638315/d428529a-b3b7-11e5-9841-40d2c67edaec.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ/20160302/us-east-1/s3/aws4_request&X-Amz-Date=20160302T072716Z&X-Amz-Expires=300&X-Amz-Signature=e003e37e4d3126b6e573690a439a4e7b2edf4e9981dec8513c892875edefe86b&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment;%20filename=gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz&response-content-type=application/octet-stream
+Resolving github-cloud.s3.amazonaws.com (github-cloud.s3.amazonaws.com)... 54.231.8.129
+Connecting to github-cloud.s3.amazonaws.com (github-cloud.s3.amazonaws.com)|54.231.8.129|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5151038 (4.9M) [application/octet-stream]
+Saving to: 'gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz.13'
+
+     0K .......... .......... .......... .......... ..........  0%  245K 20s
+    50K .......... .......... .......... .......... ..........  1%  839K 13s
+   100K .......... .......... .......... .......... ..........  2%  225K 16s
+   150K .......... .......... .......... .......... ..........  3% 1021K 13s
+   200K .......... .......... .......... .......... ..........  4%  361K 13s
+   250K .......... .......... .......... .......... ..........  5%  685K 12s
+   300K .......... .......... .......... .......... ..........  6% 4.02M 10s
+   350K .......... .......... .......... .......... ..........  7%  444K 10s
+   400K .......... .......... .......... .......... ..........  8%  719K 10s
+   450K .......... .......... .......... .......... ..........  9% 1.50M 9s
+   500K .......... .......... .......... .......... .......... 10%  982K 8s
+   550K .......... .......... .......... .......... .......... 11% 1.35M 8s
+   600K .......... .......... .......... .......... .......... 12%  601K 8s
+   650K .......... .......... .......... .......... .......... 13%  642K 8s
+   700K .......... .......... .......... .......... .......... 14% 1.06M 7s
+   750K .......... .......... .......... .......... .......... 15% 1.21M 7s
+   800K .......... .......... .......... .......... .......... 16% 1.03M 7s
+   850K .......... .......... .......... .......... .......... 17% 1.64M 6s
+   900K .......... .......... .......... .......... .......... 18% 1.14M 6s
+   950K .......... .......... .......... .......... .......... 19% 1.06M 6s
+  1000K .......... .......... .......... .......... .......... 20%  853K 6s
+  1050K .......... .......... .......... .......... .......... 21% 1.14M 6s
+  1100K .......... .......... .......... .......... .......... 22% 1.54M 5s
+  1150K .......... .......... .......... .......... .......... 23% 1.12M 5s
+  1200K .......... .......... .......... .......... .......... 24%  404K 5s
+  1250K .......... .......... .......... .......... .......... 25%  941K 5s
+  1300K .......... .......... .......... .......... .......... 26% 1.39M 5s
+  1350K .......... .......... .......... .......... .......... 27% 1.06M 5s
+  1400K .......... .......... .......... .......... .......... 28% 1.12M 5s
+  1450K .......... .......... .......... .......... .......... 29% 1.08M 5s
+  1500K .......... .......... .......... .......... .......... 30% 1.05M 5s
+  1550K .......... .......... .......... .......... .......... 31% 1.16M 4s
+  1600K .......... .......... .......... .......... .......... 32% 1.04M 4s
+  1650K .......... .......... .......... .......... .......... 33% 1.13M 4s
+  1700K .......... .......... .......... .......... .......... 34% 1.51M 4s
+  1750K .......... .......... .......... .......... .......... 35% 1.11M 4s
+  1800K .......... .......... .......... .......... .......... 36% 1009K 4s
+  1850K .......... .......... .......... .......... .......... 37% 1.31M 4s
+  1900K .......... .......... .......... .......... .......... 38%  761K 4s
+  1950K .......... .......... .......... .......... .......... 39%  633K 4s
+  2000K .......... .......... .......... .......... .......... 40% 3.68M 4s
+  2050K .......... .......... .......... .......... .......... 41%  386K 4s
+  2100K .......... .......... .......... .......... .......... 42%  683K 4s
+  2150K .......... .......... .......... .......... .......... 43% 3.82M 3s
+  2200K .......... .......... .......... .......... .......... 44% 3.99M 3s
+  2250K .......... .......... .......... .......... .......... 45% 1.12M 3s
+  2300K .......... .......... .......... .......... .......... 46%  951K 3s
+  2350K .......... .......... .......... .......... .......... 47% 1.15M 3s
+  2400K .......... .......... .......... .......... .......... 48% 1.17M 3s
+  2450K .......... .......... .......... .......... .......... 49%  894K 3s
+  2500K .......... .......... .......... .......... .......... 50%  478K 3s
+  2550K .......... .......... .......... .......... .......... 51%  945K 3s
+  2600K .......... .......... .......... .......... .......... 52% 70.4K 3s
+  2650K .......... .......... .......... .......... .......... 53% 1.24M 3s
+  2700K .......... .......... .......... .......... .......... 54% 1.20M 3s
+  2750K .......... .......... .......... .......... .......... 55%  934K 3s
+  2800K .......... .......... .......... .......... .......... 56% 4.38M 3s
+  2850K .......... .......... .......... .......... .......... 57% 3.52M 3s
+  2900K .......... .......... .......... .......... .......... 58% 5.26M 3s
+  2950K .......... .......... .......... .......... .......... 59% 5.30M 3s
+  3000K .......... .......... .......... .......... .......... 60% 5.37M 3s
+  3050K .......... .......... .......... .......... .......... 61% 7.26M 3s
+  3100K .......... .......... .......... .......... .......... 62% 7.86M 2s
+  3150K .......... .......... .......... .......... .......... 63% 7.85M 2s
+  3200K .......... .......... .......... .......... .......... 64% 7.96M 2s
+  3250K .......... .......... .......... .......... .......... 65% 5.87M 2s
+  3300K .......... .......... .......... .......... .......... 66% 7.82M 2s
+  3350K .......... .......... .......... .......... .......... 67% 7.62M 2s
+  3400K .......... .......... .......... .......... .......... 68% 7.12M 2s
+  3450K .......... .......... .......... .......... .......... 69% 7.34M 2s
+  3500K .......... .......... .......... .......... .......... 70% 1.06M 2s
+  3550K .......... .......... .......... .......... .......... 71% 3.45M 2s
+  3600K .......... .......... .......... .......... .......... 72% 1.16M 2s
+  3650K .......... .......... .......... .......... .......... 73%  938K 2s
+  3700K .......... .......... .......... .......... .......... 74%  868K 1s
+  3750K .......... .......... .......... .......... .......... 75% 1.91M 1s
+  3800K .......... .......... .......... .......... .......... 76%  993K 1s
+  3850K .......... .......... .......... .......... .......... 77%  343K 1s
+  3900K .......... .......... .......... .......... .......... 78% 2.70M 1s
+  3950K .......... .......... .......... .......... .......... 79% 1.29M 1s
+  4000K .......... .......... .......... .......... .......... 80% 1.21M 1s
+  4050K .......... .......... .......... .......... .......... 81%  841K 1s
+  4100K .......... .......... .......... .......... .......... 82% 1.27M 1s
+  4150K .......... .......... .......... .......... .......... 83% 1.06M 1s
+  4200K .......... .......... .......... .......... .......... 84% 1.06M 1s
+  4250K .......... .......... .......... .......... .......... 85% 1.33M 1s
+  4300K .......... .......... .......... .......... .......... 86% 1.17M 1s
+  4350K .......... .......... .......... .......... .......... 87%  724K 1s
+  4400K .......... .......... .......... .......... .......... 88% 1.04M 1s
+  4450K .......... .......... .......... .......... .......... 89%  103K 1s
+  4500K .......... .......... .......... .......... .......... 90% 5.10M 1s
+  4550K .......... .......... .......... .......... .......... 91% 5.26M 1s
+  4600K .......... .......... .......... .......... .......... 92% 5.17M 0s
+  4650K .......... .......... .......... .......... .......... 93% 4.88M 0s
+  4700K .......... .......... .......... .......... .......... 94% 5.28M 0s
+  4750K .......... .......... .......... .......... .......... 95% 5.08M 0s
+  4800K .......... .......... .......... .......... .......... 96% 5.24M 0s
+  4850K .......... .......... .......... .......... .......... 97% 1.76M 0s
+  4900K .......... .......... .......... .......... .......... 98% 3.22M 0s
+  4950K .......... .......... .......... .......... .......... 99% 1.39M 0s
+  5000K .......... .......... ..........                      100% 18.6K=7.3s
+
+2016-03-02 07:27:24 (693 KB/s) - 'gcp-cups-connector-rpi-jessie-2016.01.02.tar.gz.13' saved [5151038/5151038]
+
+cups-connector/
+cups-connector/gcp-cups-connector
+cups-connector/gcp-cups-connector-util
+useradd: user 'gcp' already exists
+mkdir: cannot create directory '/opt/gcp_cups_connector': File exists
+cp: cannot stat './gcp.service': No such file or directory
+hellO
+"Local printing" means that clients print directly to the connector via local subnet,
+and that an Internet connection is neither necessary nor used.
+Enable local printing?
+
+"Cloud printing" means that clients can print from anywhere on the Internet,
+and that printers must be explicitly shared with users.
+Enable cloud printing?
+
+Retain the user OAuth token to enable automatic sharing?
+
+User or group email address to share with:
+
+Proxy name for this GCP CUPS Connector:
+
+Visit https://www.google.com/device, and enter this code. I'll wait for you.
+FPDT-RBKX

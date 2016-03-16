@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Plugable Cloud Print Home</title>
+	</head>
+	<body>
+		<div>
+			<h1>Plugable Cloud Print Device Settings</h1>
+			<p>Fill in all fields before clicking 'Submit' at the bottom of the page.</p>
+			<h2>Wireless Internet Connection</h2>
+			<h4>Wireless internet is required to run Google cloud print.</h4>
+			<p>Network name - the name that identifies your wireless network<br>
+			Password - the key that prevents unauthorized users from connecting to your network</p>
+		</div>
+		<div>
+			<form action="wifi_login.php" method ="post">
+				<div>
+					<p>Network Name:</p>
+					<input type="text" name="name">
+					<p>Password (if applicable):</p>
+					<input type="text" name="password">
+				</div>
+				<div>
+					<h2>Google Cloud Print</h2>
+					<h4>A Google cloud print account and a printer name is required to set up Google cloud print.</h4>
+					<p>
+						Google cloud print account - the Google account you will be using to print documents
+						Printer name - the name of your printer that appears in your Google cloud print account
+					</p>
+				</div>
+				<div>
+					<p>Google Cloud Print Account:</p>
+					<input type="text" name="email">
+					<p>
+						<input type="submit" value="Submit">
+					</p>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+

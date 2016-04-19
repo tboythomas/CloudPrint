@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Plugable Cloud Print</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="header">
+		<h1>Plugable Cloud Print Device</h1>
+	</div>
+	
+	<div id="nav">
+		<p><a href="index.html">Home</a></p>
+		<p><a href="http://192.168.42.1:631" target="_blank">Step 1: Add Printer/CUPS</a></p>
+		<p>Step 2: Test Printer Connection</p>
+		<p><a href="formPage.html">Step 3: Device Setup</a></p>
+	</div>
+	<div id="section">
+		<h2>Test Printer Connection</h2>
+		<form action="testPrinter.php" method = "post">
+			<p>Printer brand:</p>
+			<input type="text" name="printer">
+			<p>
+				<input type="submit" value="Print">
+			</p>
+		</form>
+	</div>
+
+	<div id="footer">
+		Designed By EE498 Plugable Team
+	</div>
+
+</body>
+</html>

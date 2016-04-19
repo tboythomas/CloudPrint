@@ -1,0 +1,32 @@
+
+
+                   /----/    If I was from the printer you added, then
+                  /    /     it looks like your printer is ready!
+                 /    /
+                /    /       The next step is to customize the device.
+     \----\    /    /        You will be connecting the device to your
+      \    \  /    /         wireless network and link the device with your
+       \    \/    /          Google Cloud Print account.
+        \        /
+         \      /            Don't recycle me just yet! There is important
+          \----/             information below...
+
+
+NEXT STEP DIRECTIONS:
+
+1. Fill out the fields in Step 3. There should be 3 fields:
+     - Wireless network name: the name that appears on your computer
+         or mobile phone when scans for connectable networks.
+     - Wireless network password: the password for the wireless network name
+         field. If the wireless network does not have a password, leave this
+         field blank.
+     - Google cloud print account: the Google account that you wish to use to
+         cloud print documents on the currently-connected printer.
+
+2. Once the fields have been filled out, click on "Submit" at the bottom of
+     the page. After clicking on "Submit", another page will be printed within
+     a few minutes. Depending on whether the device has been able to connect
+     to your wireless network, there would be either a check or cross on the
+     page.
+
+3. Follow the instructions on the second printed page.

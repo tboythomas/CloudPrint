@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plugable Cloud Print</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+	</head>
+	<body>
+		<div id="header">
+			<h1>Plugable Cloud Print Device</h1>
+		</div>
+
+		<div id="nav">
+			<p><a href = "index.html">Home</a></p>
+			<p><a href = "http://192.168.42.1:631" target="_blank">Step 1: Add Printer/CUPS</a></p>
+			<p><a href = "testPrinter.html">Step 2: Test Printer Connection</a></p>
+			<p>Step 3: Device Setup</p>
+		</div>
+
+		<div id="section">
+			<div>
+				<h2>Customize Device Settings</h2>
+			</div>
+			<div id ="form">
+				<form action="wifi_login.php" method ="post">
+					<div>
+						<h2>Wireless Network</h2>
+					</div>
+					<div>
+						<p>Network Name:</p>
+						<input type="text" name="name">
+						<p>Network Password (if applicable):</p>
+						<input type="text" name="password">
+					</div>
+					<div>
+						<h2>Google Cloud Print</h2>
+					</div>
+					<div>
+						<p>Google Cloud Print Account:</p>
+						<input type="text" name="email">
+						<p>Printer Brand:</p>
+						<input type="text" name="printer">		
+						<p>A confirmation page will be printed shortly after clicking "Submit".</p>
+						<p><input type="submit" value="Submit"></p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="footer">
+			Designed By EE498 Plugable Team
+		</div>
+	</body>
+</html>
+

@@ -2,6 +2,8 @@
 <head>
 	<title>Plugable Cloud Print</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src = "jquery.js"></script>
+	<script type="text/javascript"  src = "testPrinter.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -18,7 +20,7 @@
 		<h2>Test Printer Connection</h2>
 		<form action="testPrinter.php" method = "post">
 			<p>Printer brand:</p>
-			<input type="text" name="printer">
+			<input id = "printer" type="text" name="printer">
 			<p>
 				<input type="submit" value="Print">
 			</p>

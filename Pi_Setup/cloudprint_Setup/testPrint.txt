@@ -14,14 +14,7 @@
 
 NEXT STEP DIRECTIONS:
 
-1. Fill out the fields in Step 3. There should be 3 fields:
-     - Wireless network name: the name that appears on your computer
-         or mobile phone when scans for connectable networks.
-     - Wireless network password: the password for the wireless network name
-         field. If the wireless network does not have a password, leave this
-         field blank.
-     - Google cloud print account: the Google account that you wish to use to
-         cloud print documents on the currently-connected printer.
+1. Fill out the fields in Step 3.
 
 2. Once the fields have been filled out, click on "Submit" at the bottom of
      the page. After clicking on "Submit", another page will be printed within

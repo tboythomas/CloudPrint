@@ -25,6 +25,6 @@ AUTHORIZE CUPS CONNECTOR WITH GOOGLE ACCOUNT DIRECTIONS:
 
 4. Once done, the device should now link your printer to your Google account.
      After a few minutes, the printer you added should appear in your list of
-     cloud printers at http://www.google.com/cloudprint#printers.
+     cloud printers at http://www.google.com/cloudprint under the "Printers" tab.
 
 EIGHT-LETTER CODE:

@@ -13,10 +13,8 @@
 
 
 If you have already successfully printed a test page from Step 2, there is no
-need to do so again. However, please re-enter the printer brand field before
-proceeding to Step 3.
+need to do so again.
 
-Fill out the 3 fields (wireless network name, wireless network password, and
-Google cloud print account) in Step 3 and click on "Submit" again. 
-**If your wireless network does not have a password, leave the field blank.
+Fill out the fields in Step 3 and click on "Submit" again to re-configure. 
+** If your wireless network does not have a password, leave the field blank.
 

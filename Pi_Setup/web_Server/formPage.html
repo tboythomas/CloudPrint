@@ -3,7 +3,8 @@
 	<head>
 		<title>Plugable Cloud Print</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-
+		<script type="text/javascript" src = "jquery.js"></script>
+		<script type="text/javascript"  src = "formPage.js"></script>
 	</head>
 	<body>
 		<div id="header">
@@ -28,20 +29,20 @@
 					</div>
 					<div>
 						<p>Network Name:</p>
-						<input type="text" name="name">
+						<input id = "wifi" type="text" name="name">
 						<p>Network Password (if applicable):</p>
-						<input type="text" name="password">
+						<input id = "password" type="text" name="password">
 					</div>
 					<div>
 						<h2>Google Cloud Print</h2>
 					</div>
 					<div>
 						<p>Google Cloud Print Account:</p>
-						<input type="text" name="email">
+						<input id ="email" type="text" name="email">
 						<p>Printer Brand:</p>
-						<input type="text" name="printer">		
+						<input id = "printer" type="text" name="printer">		
 						<p>A confirmation page will be printed shortly after clicking "Submit".</p>
-						<p><input type="submit" value="Submit"></p>
+						<p><input id = "submit_button" type="submit" value="Submit"></p>
 					</div>
 				</form>
 			</div>

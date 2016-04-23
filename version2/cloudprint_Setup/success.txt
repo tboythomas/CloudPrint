@@ -1,0 +1,30 @@
+
+
+                   /----/    Success! The device has connected to the wireless
+                  /    /     network you provided! It is now waiting for you
+                 /    /      to authorize the connection of "CUPS Connector"
+                /    /       with your Google account.
+     \----\    /    /
+      \    \  /    /         One more step to go!
+       \    \/    /
+        \        /
+         \      /
+          \----/
+
+
+AUTHORIZE CUPS CONNECTOR WITH GOOGLE ACCOUNT DIRECTIONS:
+
+1. On your computer or mobile device, go to http://www.google.com/device.
+     Sign in with the Google account you previously provided.
+
+2. Enter the eight-letter code at the bottom of this page. 
+     Then, click on "NEXT".
+
+3. The web page should ask if you would like to connect to "CUPS Connector".
+     Click on "Allow".
+
+4. Once done, the device should now link your printer to your Google account.
+     After a few minutes, the printer you added should appear in your list of
+     cloud printers at http://www.google.com/cloudprint under the "Printers" tab.
+
+EIGHT-LETTER CODE:

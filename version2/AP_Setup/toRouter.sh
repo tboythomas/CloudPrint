@@ -28,11 +28,12 @@ sudo update-rc.d isc-dhcp-server enable
 sudo systemctl restart isc-dhcp-server
 sudo systemctl restart hostapd
 sleep 5
-CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+#CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Master | wc -l`
 CONFIRM_IFCONFIG=`ifconfig wlan0 | grep 192.168.42.1 | wc -l`
 while [ $CONFIRM_IWCONFIG -ne 1 -a $CONFIRM_IFCONFIG -ne 1 ]; do
 	echo "running toRouter.sh again"
 	sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh
-	CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+	CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Master | wc -l`
 	CONFIRM_IFCONFIG=`ifconfig wlan0 | grep 192.168.42.1 | wc -l`
 done

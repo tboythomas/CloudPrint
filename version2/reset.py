@@ -1,23 +1,29 @@
-# Reset Button File. If the reset button hold more than 5 secs, reset
-# to Router Mode.
-# @Usage: GPIO pin 23
-
+"""
+    This program reset the pi to router mode
+"""
 import RPi.GPIO as GPIO
-import os, time
+import time
 
-#set up GPIO using BCM numbering
+# hold time for toRouter
+HOLDTIME = 5
+# input pin number
+INPUT = 18
+
 GPIO.setmode(GPIO.BCM)
-#setup GPIO using Board numbering
-GPIO.setmode(GPIO.BOARD)
 
-GPIO.setup(23, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(INPUT, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 while True:
-	if(GPIO.input(23)):		
-		pressedTime = time.monotonic()
-		while(GPIO.input(23)):
-			pass
-		pressedTime = time.monotonic() - pressedTime
-		if pressedTime >= 5:
-			os.system("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
-	GPIO.cleanup()
+    input_state = GPIO.input(INPUT)
+    if input_state == False:
+        print("button pressed " + str(input_state))
+        start_time = time.monotonic()
+        while input_state == False:
+            pressed_time = time.monotonic() - start_time
+            if pressed_time >= HOLDTIME:
+                print('ssudo ./toRouter.sh')
+                break
+        break
+print("clean up")
+GPIO.cleanup()
+

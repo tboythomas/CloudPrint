@@ -1,7 +1,10 @@
-// Submit Button disabled until form is completed
+/*
+	for formPage, submit button disabled until form is completed
+*/
+
 $(document).ready(function (){
     validate();
-    $('#wifi, #password, #email, #printer').change(validate);
+    $('#wifi, #password, #email').change(validate);
 });
 
 function validate(){

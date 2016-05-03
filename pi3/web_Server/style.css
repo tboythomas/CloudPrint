@@ -1,0 +1,40 @@
+
+body{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+#header {
+    background-color:#3498DB;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:500px;
+    width:20%;
+    float:left;
+    padding:5px; 
+}
+#section {
+    width:70%;
+    float:left;
+    padding:10px; 
+}
+
+li{
+    margin-left: 20px;
+}
+
+#footer {
+    background-color:#3498DB;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+#form{
+    font-size: 10pt;
+}

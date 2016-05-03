@@ -1,3 +1,8 @@
+<!--
+	This page tests the local connection with the printer
+	and prints the result from printer
+-->
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Plugable Cloud Print</title>

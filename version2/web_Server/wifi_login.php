@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<!--
+	This page connects the Pi to wifi.
+	Return to Router mode if it didnot successfully log in
+-->
 <html>
 <head>
 	<title>Plugable Cloud Print</title>

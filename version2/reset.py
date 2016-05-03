@@ -2,7 +2,7 @@
     This program reset the pi to router mode
 """
 import RPi.GPIO as GPIO
-import time
+import time, os
 
 # hold time for toRouter
 HOLDTIME = 5
@@ -21,7 +21,8 @@ while True:
         while input_state == False:
             pressed_time = time.monotonic() - start_time
             if pressed_time >= HOLDTIME:
-                print('ssudo ./toRouter.sh')
+                print('changing to router')
+                #os.system("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
                 break
         break
 print("clean up")

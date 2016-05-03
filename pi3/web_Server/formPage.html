@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plugable Cloud Print</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script type="text/javascript" src = "jquery.js"></script>
+		<script type="text/javascript"  src = "formPage.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<h1>Plugable Cloud Print Device</h1>
+		</div>
+
+		<div id="nav">
+			<p><a href = "testPrinter.html">Step 1: Add and Test Printer</a></p>
+			<p>Step 2: Device Setup</p>
+		</div>
+
+		<div id="section">
+			<div>
+				<h2>Customize Device Settings</h2>
+			</div>
+			<div id ="form">
+				<form action="wifi_login.php" method ="post">
+					<div>
+						<h2>Wireless Network</h2>
+					</div>
+					<div>
+						<p>Network Name (required):</p>
+						<input id = "wifi" type="text" name="name">
+						<p>Network Password (if applicable):</p>
+						<input id = "password" type="text" name="password">
+					</div>
+					<div>
+						<h2>Google Cloud Print</h2>
+					</div>
+					<div>
+						<p>Google Cloud Print Account (required):</p>
+						<input id ="email" type="text" name="email">	
+						<p>A confirmation page will be printed shortly after clicking "Submit".</p>
+						<p><input id = "submit_button" type="submit" value="Submit"> This button will be diabled until all required fields are filled out.</p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="footer">
+			Designed By EE498 Plugable Team
+		</div>
+	</body>
+</html>
+

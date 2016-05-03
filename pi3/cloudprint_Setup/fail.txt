@@ -1,0 +1,20 @@
+
+
+     \----\      /----/     Uh oh... It seems like the device failed to
+      \    \    /    /      customize itself with the information you provided.
+       \    \  /    /       It has reverted itself back to discoverable mode.
+        \    \/    /
+         \        /         Please reconnect to the device with your computer
+         /        \         or mobile phone and go to 192.168.42.1 from a
+        /    /\    \        browser to try again.
+       /    /  \    \
+      /    /    \    \      This time, you can skip Step 1 (the printer you
+     /----/      \----\     added before has not been deleted). 
+
+
+If you have already successfully printed a test page from Step 2, there is no
+need to do so again.
+
+Fill out the fields in Step 3 and click on "Submit" again to re-configure. 
+** If your wireless network does not have a password, leave the field blank.
+

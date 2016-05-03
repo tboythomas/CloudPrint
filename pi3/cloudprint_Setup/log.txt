@@ -1,0 +1,20 @@
+"Local printing" means that clients print directly to the connector via local subnet,
+and that an Internet connection is neither necessary nor used.
+Enable local printing?
+
+"Cloud printing" means that clients can print from anywhere on the Internet,
+and that printers must be explicitly shared with users.
+Enable cloud printing?
+
+Retain the user OAuth token to enable automatic sharing?
+
+User or group email address to share with:
+
+Proxy name for this GCP CUPS Connector:
+
+Visit https://www.google.com/device, and enter this code. I'll wait for you.
+DKFC-NMAN
+Acquired OAuth credentials for robot account
+
+The config file /var/www/html/gcp-cups-connector.config.json is ready to rock.
+Keep it somewhere safe, as it contains an OAuth refresh token.

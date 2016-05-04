@@ -14,19 +14,16 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(INPUT, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 while True:
-    input_state = GPIO.input(INPUT)
-    if input_state == False:
-        print("button pressed " + str(input_state))
+    if GPIO.input(INPUT) == False:
+        print("button pressed ")
         start_time = time.monotonic()
-        while input_state == False:
-            pressed_time = time.monotonic() - start_time
-            if pressed_time >= HOLDTIME:
-		print ('deleting printers')
-		os.system("sudo /home/pi/Pi_Setup/removePrinters.sh")
-                print('changing to router')
-                os.system("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
-                break
-        break
-print("clean up")
+        while GPIO.input(INPUT) == False:
+            pass   
+        pressed_time = time.monotonic() - start_time
+        if pressed_time >= HOLDTIME:
+            print ('deleting printers')
+            #os.system("sudo /home/pi/Pi_Setup/removePrinters.sh")
+            print('changing to router')
+            #os.system("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
 GPIO.cleanup()
 

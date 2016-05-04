@@ -30,6 +30,9 @@ def main():
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/cloudPrint.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/connector.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/print.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/removePrinters.sh")
+	# edit rc.local
+	os.system("sudo sed -i '19i sudo python3 /home/pi/Pi_Setup/reset.py &' /etc/rc.local")
 	# configure into access point
 	to_access_point()
 	

@@ -14,7 +14,7 @@
 	</div>
 
 	<div id="nav">
-		<p><a href = "index.html">Home</a></p>
+		<p><a href = "verified.html">Home</a></p>
                 <p><a href="testPrinter.html">Step 1: Add and Test Printer</a></p>
                 <p><a href="formPage.html">Step 2: Device Setup</a></p>
 	</div>

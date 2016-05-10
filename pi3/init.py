@@ -22,6 +22,7 @@ def main():
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/AP_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/client_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/cloudprint_Setup/\" >> /etc/sudoers'")
+	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/\" >> /etc/sudoers")
 	# change permission of files
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/client_Setup/checkWifi.sh")
@@ -58,7 +59,8 @@ def install_apache2_php5():
 	print("\nUPDATE: APACHE2 & PHP5 INSTALLED\n")
 	# copy web page files to apache2 web server folders
 	os.system("sudo cp -r /home/pi/Pi_Setup/web_Server/* /var/www/html/.")
-	print("\nUPDATE: WEB PAGE ADDED\n")
+	os.system("sudo rm /var/www/html/index.html")
+	print("\nUPDATE: WEB PAGES ADDED\n")
 
 def install_connector():
 	# install dependencies

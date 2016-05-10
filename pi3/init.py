@@ -22,7 +22,7 @@ def main():
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/AP_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/client_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/cloudprint_Setup/\" >> /etc/sudoers'")
-	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/\" >> /etc/sudoers")
+	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/\" >> /etc/sudoers'")
 	# change permission of files
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/client_Setup/checkWifi.sh")

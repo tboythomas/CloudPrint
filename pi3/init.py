@@ -39,7 +39,7 @@ def main():
 	os.system("sudo sed -i '19i sudo python3 /home/pi/Pi_Setup/reset.py &' /etc/rc.local")
 	# configure into access point
 	to_access_point()
-	os.system("sudo python3 /home/pi/reset.py &")
+	os.system("sudo python3 /home/pi/Pi_Setup/reset.py &")
 	
 def install_cups():
 	# install cups package

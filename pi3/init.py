@@ -36,7 +36,7 @@ def main():
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/removePrinters.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/verify.sh")
 	# edit rc.local
-	os.system("sudo sed -i '19i sudo python3 /home/pi/Pi_Setup/reset.py &' /etc/rc.local")
+	os.system("sudo sed -i '19c sudo python3 /home/pi/Pi_Setup/reset.py &' /etc/rc.local")
 	# configure into access point
 	to_access_point()
 	os.system("sudo python3 /home/pi/Pi_Setup/reset.py &")

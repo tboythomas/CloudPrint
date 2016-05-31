@@ -33,6 +33,7 @@ def main():
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/connector.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/printFail.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/print.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/removeOnePrinter.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/removePrinters.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/verify.sh")
 	# edit rc.local

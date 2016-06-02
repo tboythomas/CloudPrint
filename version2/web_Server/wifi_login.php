@@ -14,7 +14,7 @@
         </div>
 
         <div id="nav">
-                <p><a href="index.html">Home</a></p>
+                <p><a href="verified.html">Home</a></p>
                 <p><a href="testPrinter.html">Step 1: Add and Test Printer</a></p>
 		<p><a href="formPage.html">Step 2: Device Setup</a></p>
         </div>
@@ -36,7 +36,7 @@
 
 	# check wifi connection
 	$connection = shell_exec("sudo /home/pi/Pi_Setup/client_Setup/checkWifi.sh $name");
-	if($connection == 0) {
+	if($connection && $connection == 0) {
 		$ap = shell_exec("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh");
 		$print = shell_exec("sudo /home/pi/Pi_Setup/cloudprint_Setup/printFail.sh");
 	} else {

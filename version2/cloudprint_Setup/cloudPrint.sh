@@ -5,4 +5,5 @@ sudo mv ./gcp-cups-connector.config.json /etc/gcp_cups_connector
 sudo chmod 660 /etc/gcp_cups_connector/gcp-cups-connector.config.json
 sudo chown gcp:gcp /etc/gcp_cups_connector/gcp-cups-connector.config.json
 sudo systemctl enable gcp
-sudo reboot 
+sleep 2
+sudo systemctl restart gcp

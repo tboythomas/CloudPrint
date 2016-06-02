@@ -22,16 +22,25 @@ def main():
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/AP_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/client_Setup/\" >> /etc/sudoers'")
 	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/cloudprint_Setup/\" >> /etc/sudoers'")
+	os.system("sudo sh -c 'echo \"www-data ALL=NOPASSWD: /home/pi/Pi_Setup/\" >> /etc/sudoers'")
 	# change permission of files
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/client_Setup/checkWifi.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/client_Setup/switchToWlanClient.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/client_Setup/wifi_login.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/addPrinter.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/cloudPrint.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/connector.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/printFail.sh")
 	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/print.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/cloudprint_Setup/removeOnePrinter.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/removePrinters.sh")
+	os.system("sudo chmod 744 /home/pi/Pi_Setup/verify.sh")
+	# edit rc.local
+	os.system("sudo sed -i '19c sudo python3 /home/pi/Pi_Setup/reset.py &' /etc/rc.local")
 	# configure into access point
 	to_access_point()
+	os.system("sudo python3 /home/pi/Pi_Setup/reset.py &")
 	
 def install_cups():
 	# install cups package
@@ -51,13 +60,9 @@ def install_apache2_php5():
 	os.system("sudo apt-get install php5 -y")
 	print("\nUPDATE: APACHE2 & PHP5 INSTALLED\n")
 	# copy web page files to apache2 web server folders
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/formPage.html /var/www/html/")
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/index.html /var/www/html/")
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/style.css /var/www/html/")
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/testPrinter.html /var/www/html/")
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/testPrinter.php /var/www/html/")
-	os.system("sudo cp /home/pi/Pi_Setup/web_Server/wifi_login.php /var/www/html/")
-	print("\nUPDATE: WEB PAGE ADDED\n")
+	os.system("sudo cp -r /home/pi/Pi_Setup/web_Server/* /var/www/html/.")
+	os.system("sudo rm /var/www/html/index.html")
+	print("\nUPDATE: WEB PAGES ADDED\n")
 
 def install_connector():
 	# install dependencies

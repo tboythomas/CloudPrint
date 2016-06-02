@@ -28,4 +28,4 @@ AUTHORIZE CUPS CONNECTOR WITH GOOGLE ACCOUNT DIRECTIONS:
      cloud printers at http://www.google.com/cloudprint under the "Printers" tab.
 
 EIGHT-LETTER CODE:
-DKFC-NMAN
+MMDK-NDKM

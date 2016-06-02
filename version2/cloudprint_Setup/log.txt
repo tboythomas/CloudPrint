@@ -13,8 +13,4 @@ User or group email address to share with:
 Proxy name for this GCP CUPS Connector:
 
 Visit https://www.google.com/device, and enter this code. I'll wait for you.
-DKFC-NMAN
-Acquired OAuth credentials for robot account
-
-The config file /var/www/html/gcp-cups-connector.config.json is ready to rock.
-Keep it somewhere safe, as it contains an OAuth refresh token.
+MMDK-NDKM

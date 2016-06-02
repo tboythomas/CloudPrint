@@ -28,6 +28,7 @@
 	$name = $_POST["name"];
 	$password = $_POST["password"];
 	$email = $_POST["email"];
+	$proxy = $_POST["proxy"];
 
 	# excute the bash file to connect to wireless network
 	$output = shell_exec("sudo /home/pi/Pi_Setup/client_Setup/wifi_login.sh $name $password");
@@ -40,7 +41,7 @@
 		$ap = shell_exec("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh");
 		$print = shell_exec("sudo /home/pi/Pi_Setup/cloudprint_Setup/printFail.sh");
 	} else {
-		$code = shell_exec("sudo /home/pi/Pi_Setup/cloudprint_Setup/connector.sh $email");
+		$code = shell_exec("sudo /home/pi/Pi_Setup/cloudprint_Setup/connector.sh $email $proxy");
 	}
 ?>
         </div>

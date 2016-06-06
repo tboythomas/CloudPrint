@@ -1,4 +1,15 @@
 #!/bin/bash
+<<FILE_DETAILS
+	File name: connector.sh
+	Usage: connector.sh EMAIL PROXY_NAME
+		EMAIL: a Google account that you would like to use for Google cloud printing
+		PROXY_NAME: a unique name for this device
+	Description: This script generates the information needed to run the Google CUPS Connector executable and
+		starts running the Google CUPS Connector in the background while saving its output to a log file. 
+		After waiting for the executable to generate a code, the code is extracted from the log file and printed
+		from the device's connected printer.
+FILE_DETAILS
+
 sudo echo "y
 y
 y

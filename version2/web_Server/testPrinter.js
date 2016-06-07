@@ -1,4 +1,8 @@
-// Submit Button disabled until required fields are completed
+/*
+	Disable submit button for testPrinter page until required 
+	fields are completed.
+*/
+
 $(document).ready(function (){
     validate();
     $('#printer').change(validate);

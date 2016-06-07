@@ -30,10 +30,10 @@ sudo update-rc.d isc-dhcp-server enable
 sudo systemctl restart isc-dhcp-server
 sudo systemctl restart hostapd
 sleep 5
-#confirms that the pi has sucessfully been converted to AP mode
+# confirms that the pi has sucessfully been converted to AP mode
 CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
 CONFIRM_IFCONFIG=`ifconfig wlan0 | grep 192.168.42.1 | wc -l`
-#Runs the script again if AP conversion is not sucessful
+# runs the script again if AP conversion is not sucessful
 while [ $CONFIRM_IWCONFIG -ne 1 -o $CONFIRM_IFCONFIG -ne 1 ]; do
 	echo "running toRouter.sh again"
 	sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh

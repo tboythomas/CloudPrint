@@ -1,6 +1,7 @@
 #/etc/network/interfaces configuration file for
 #AP mode. Assigns static IP 192.168.42.1 and
 #enables IP forwarding
+
 auto lo
 iface lo inet loopback
 iface eth0 inet dhcp

@@ -1,4 +1,4 @@
-#Specifies the configuration file for hostapd to use
+# Specifies the configuration file for hostapd to use
 
 # Defaults for hostapd initscript
 #

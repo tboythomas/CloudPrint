@@ -31,7 +31,7 @@
 					print("Please use the following link to manually re-add the printer:");
 				}
 			?>
-		<p><a href="https://192.168.137.88:631/admin">Manual printer setup</a></p>
+		<p><a href="https://192.168.42.1:631/admin">Manual printer setup</a></p>
 	</div>
 
 	<div id="footer">

@@ -1,7 +1,7 @@
 #!/bin/bash
 <<FILE_DETAILS
 	File name: removeOnePrinter.sh
-	Usage: removeOnePrinter.sh brand
+	Usage: removeOnePrinter.sh PRINTER_BRAND
 	Description: This script is used to remove only one printer at a time that 
 		failed to be added during auto printer set-up. This script uses the 
 		input arguement brand  and checks the lastPrinter file to find existing 

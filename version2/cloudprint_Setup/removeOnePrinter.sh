@@ -9,12 +9,12 @@
 		back the result.
 FILE_DETAILS
 
-#look for printer that failed to be added
+# look for printer that failed to be added
 printer=$(sudo cat /home/pi/Pi_Setup/cloudprint_Setup/lastPrinter.txt | grep -i $1)
-#remove the printer
+# remove the printer
 lpadmin -x $printer
 found=$(echo "$printer" | wc -l)
-#report back the result
+# report back the result
 if [ -z "$printer" ]; then
 	echo "1"
 else

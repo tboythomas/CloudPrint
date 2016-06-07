@@ -1,3 +1,8 @@
+<!--
+	This page tests if this device is a valid Plugable product
+	and directs to different page according to the result.
+-->
+
 <?php
     $verified = shell_exec("sudo /home/pi/Pi_Setup/verify.sh");
     if($verified == 0) {

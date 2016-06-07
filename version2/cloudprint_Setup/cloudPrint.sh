@@ -1,9 +1,9 @@
 #!/bin/bash
 <<FILE_DETAILS
-	File name: cloudPrint.sh
+    File name: cloudPrint.sh
     Usage: cloudPrint.sh
 	Description: This script runs the Google CUPS Connector executable using the information 
-		from info.txt as the required user input and sets up the generated file to
+	    from info.txt as the required user input and sets up the generated file to
 		enable cloud printing through the device.
 FILE_DETAILS
 

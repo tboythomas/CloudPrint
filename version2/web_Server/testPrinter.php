@@ -1,6 +1,7 @@
 <!--
-	This page tests the local connection with the printer
-	and prints the result from printer
+	This page attempts to add the local printer
+	and prints the result from printer using the
+	addPrinter script
 -->
 <!DOCTYPE html>
 <html>

@@ -1,4 +1,4 @@
-// Submit Button disabled until form is completed
+// Submit Button disabled until required fields are completed
 $(document).ready(function (){
     validate();
     $('#printer').change(validate);

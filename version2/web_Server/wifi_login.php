@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!--
-	This page connects the Pi to wifi.
-	Return to Router mode if it didnot successfully log in
+	This page connects the Pi to wifi and runs a script to set
+	up the Google CUPS connector.
+	Return to router mode if falied.
 -->
 <html>
 <head>

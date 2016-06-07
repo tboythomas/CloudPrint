@@ -1,5 +1,6 @@
 /*
-	for formPage, submit button disabled until form is completed
+	Disable submit button for formPage until required fields
+	are completed.
 */
 
 $(document).ready(function (){

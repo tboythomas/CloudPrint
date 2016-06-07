@@ -1,6 +1,7 @@
 <!--
-	This page tests the local connection with the printer
-	and prints the result from printer
+	This page attempts to removed the printer that failed to
+	be added according to user input. Then it displays the result
+	on the page
 -->
 <!DOCTYPE html>
 <html>

@@ -1,6 +1,5 @@
-# to be placed at /etc/network/interfaces configuration 
-# file for AP mode. Assigns static IP 192.168.42.1 and
-# enables IP forwarding
+# To be placed at /etc/network/interfaces, configuration 
+# file for client mode. Disables IP forwarding
 
 auto lo
 iface lo inet loopback

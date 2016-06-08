@@ -1,5 +1,11 @@
 #!/bin/bash
-# switchToWlanClient
+<<FILE_DETAILS
+    File name: swtichToWlanClient.sh
+    Usage: swtichToWlanClient.sh
+    Description: This script converts the Raspberry Pi to wlan client mode.
+    No need for reboot after converting.
+FILE_DETAILS
+
 echo "--> Switching to wlan client mode"
 echo "--> Shut down wlan0"
 sudo ifdown --force wlan0

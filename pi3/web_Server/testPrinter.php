@@ -1,6 +1,9 @@
 <!--
-	This page tests the local connection with the printer
-	and prints the result from printer
+FILE_DETAILS
+    Description: This page attempts to add the local printer
+	and prints the result from printer using the
+	addPrinter script.
+FILE_DETAILS
 -->
 <!DOCTYPE html>
 <html>
@@ -15,8 +18,8 @@
 
 	<div id="nav">
 		<p><a href = "verified.html">Home</a></p>
-                <p><a href="testPrinter.html">Step 1: Add and Test Printer</a></p>
-                <p><a href="formPage.html">Step 2: Device Setup</a></p>
+        <p><a href="testPrinter.html">Step 1: Add and Test Printer</a></p>
+        <p><a href="formPage.html">Step 2: Device Setup</a></p>
 	</div>
 	<div id="section">
 		<h2>Adding your local printer and printing test page...</h2>

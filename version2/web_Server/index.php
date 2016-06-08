@@ -5,7 +5,7 @@ FILE_DETAILS
 	and directs to verified.html if it is. Otherwise, to errorPage.html
 FILE_DETAILS
 '''
-    $verified = shell_exec("sudo /home/pi/Pi_Setup/verify.sh");
+    $verified = shell_exec("sudo /home/pi/Pi_Setup/cloudprint_Setup/verify.sh");
     if($verified == 0) {
     	header('Location: errorPage.php'); 
     }else{

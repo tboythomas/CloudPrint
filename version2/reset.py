@@ -24,7 +24,7 @@ while True:
         pressed_time = time.monotonic() - start_time
         if pressed_time >= HOLDTIME:
             print ('deleting printers')
-            os.system("sudo /home/pi/Pi_Setup/removePrinters.sh")
+            os.system("sudo /home/pi/Pi_Setup/cloudprint_Setup/removePrinters.sh")
             print('changing to router')
             os.system("sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh")
 GPIO.cleanup()

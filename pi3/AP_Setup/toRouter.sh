@@ -6,6 +6,7 @@
         to be rebooted after running this script.
 FILE_DETAILS
 
+#!/bin/bash
 sudo ifdown --force wlan0
 sudo pkill wpa_supplicant
 # set up dhcp server
@@ -22,6 +23,11 @@ sudo cp /home/pi/Pi_Setup/AP_Setup/hostetc /etc/default/hostapd
 sudo cp /home/pi/Pi_Setup/AP_Setup/sysctl.conf /etc/sysctl.conf
 sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
+# sudo cp ./interfaces /etc/network/interfaces	### already done ###
+# update hostapd
+#sudo mv /usr/sbin/hostapd /usr/sbin/hostapd.ORIG
+#sudo cp /home/pi/Pi_Setup/AP_Setup/hostapd /usr/sbin/
+#sudo chmod 755 /usr/sbin/hostapd
 # set program as 'daemon'
 sudo service hostapd start
 sudo service isc-dhcp-server start
@@ -30,13 +36,12 @@ sudo update-rc.d isc-dhcp-server enable
 sudo systemctl restart isc-dhcp-server
 sudo systemctl restart hostapd
 sleep 5
-# confirms that the pi has sucessfully been converted to AP mode
-CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+#CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Master | wc -l`
 CONFIRM_IFCONFIG=`ifconfig wlan0 | grep 192.168.42.1 | wc -l`
-# runs the script again if AP conversion is not sucessful
 while [ $CONFIRM_IWCONFIG -ne 1 -o $CONFIRM_IFCONFIG -ne 1 ]; do
 	echo "running toRouter.sh again"
 	sudo /home/pi/Pi_Setup/AP_Setup/toRouter.sh
-	CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Pi_AP | wc -l`
+	CONFIRM_IWCONFIG=`iwconfig wlan0 | grep Master | wc -l`
 	CONFIRM_IFCONFIG=`ifconfig wlan0 | grep 192.168.42.1 | wc -l`
 done

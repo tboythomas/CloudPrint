@@ -3,7 +3,7 @@
     File name: test.sh
     Usage: test.sh counter
     Description: This script takes one integer parameter N.
-	 And it converts the Pi from the AP mode to WlanClient mode
+    	And it converts the Pi from the AP mode to WlanClient mode
     	N times. Designed for testing the network convertion scripts.
 FILE_DETAILS
 

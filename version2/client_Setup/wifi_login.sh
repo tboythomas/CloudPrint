@@ -3,8 +3,9 @@
     File name: wifi_login.sh
     Usage: wifi_login.sh WiFiName WiFipassword
     Description: This script writes the Wifi Name and password into the Raspberry
-    Pi wpa_supplicant.conf and clears out the previous content.
-    swtichToWlanClient.sh will try to log in to the Wifi network wrote in this file.
+    	Pi /etc/wpa_supplicant/wpa_supplicant.conf and clears out the previous 
+    	content. swtichToWlanClient.sh will try to log in to the Wifi network 
+	in this file.
 FILE_DETAILS
 
 NAME=$1

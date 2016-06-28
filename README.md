@@ -1,2 +1,2 @@
 # CloudPrint
-Plugable CloudPrint Project
+Prototype CloudPrint Project
